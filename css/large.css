@@ -1,0 +1,15 @@
+/* desktop font-size */
+body{
+  font-size: 1.4rem;
+  background-color: yellow;
+}
+/* common layout */
+.container{
+  justify-content: center;
+}
+.appHeader, .appMain{
+  width: 1000px;
+}
+.appNavigation{
+  width: 100%;
+}

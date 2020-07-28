@@ -1,0 +1,31 @@
+/* mobile default font-size */
+body{
+  font-size: 1.5rem;
+  background-color: pink;
+}
+/* mobile layout */
+.appHeader,
+.appMain {
+  width: 100%;
+}
+/* mobile header */
+
+.appHeader{
+}
+/* mobile navigation */
+.appNavigation{
+  position: fixed;
+  /* : viewport 기준 배치 */
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
+  transform: translateX(-100%);
+}
+/* mobile main contents */
+.appMain{
+}
+/* mobile footer */
+.appFooter{
+}
+
