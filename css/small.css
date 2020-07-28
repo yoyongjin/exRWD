@@ -11,6 +11,39 @@ body{
 /* mobile header */
 
 .appHeader{
+  grid-template: auto / 1fr;
+  background-color: #38302e;
+}
+.brand .memberOnly .searchForm{
+  padding: 10px 20px;
+}
+/* mobile brand */
+
+.brand *{
+  display: block;
+}
+/* mobile member link */
+.memberOnly{
+  order: -1;
+  background-color: #988574;
+  color: #fff;  
+}
+/* mobile search form */
+
+input[type="search"]{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 5px;
+  height: 35px;
+  width: calc(100% - 45px);
+  /* inline-block     white space 때문에 35에서 더빼줘야댐  */
+  margin-right: 5px;
+}
+.buttonSearch{
+  width: 35px;
+  height: 35px;
+  border: 0;
+  padding: 0;
 }
 /* mobile navigation */
 .appNavigation{
