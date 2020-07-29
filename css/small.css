@@ -1,7 +1,7 @@
 /* mobile default font-size */
 body{
   font-size: 1.5rem;
-  background-color: pink;
+  /* background-color: pink; */
 }
 /* mobile layout */
 .appHeader,
@@ -39,12 +39,28 @@ input[type="search"]{
   /* inline-block     white space 때문에 35에서 더빼줘야댐  */
   margin-right: 5px;
 }
+.resetBox{
+  margin: 5px 10px;
+}
 .buttonSearch{
   width: 35px;
   height: 35px;
   border: 0;
   padding: 0;
+  background-color: transparent;
+  position: relative;
+
 }
+.buttonSearch::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./images/btn_search.png) 0 0 / cover no-repeat scroll;
+}
+
 /* mobile navigation */
 .appNavigation{
   position: fixed;
