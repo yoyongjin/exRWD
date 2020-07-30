@@ -51,6 +51,27 @@ input[type="search"] {
 }
 
 /* 모바일 내비게이션 */
+.isAct .menu__list{
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+/* .isAct .menu__list::before{
+  
+  content: '';
+  position: absolute;
+  top: 0;left: 0;right: 0;bottom: 0;
+  background: inherit;
+  z-index: -1;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  filter: url(#blur);
+} */
+
 
 /* 모바일 메뉴 제어 버튼 */
 .buttonBurger {
@@ -95,13 +116,56 @@ input[type="search"] {
   transform: translateY(-50%) rotate(-45deg);
 }
 .menu__list {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   width: 70vw;
   height: 100vh;
-  transform: translateX(-100%);
+  transform: translateX(-105%);
+  backdrop-filter: blur(4px);
+  padding: 20px;
 }
+/* .menu__item{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+} */
+/* .menu__item::before{
+  background-color: orangered;
+  vertical-align: middle; */
+}
+.menu__item.menuAct{
+  
+}
+.menu__link{
+  font-size: 1.7rem;
+  font-weight: 700;
+  display: inline-block;
+  width: calc(100% - 1.5em);
+  
+  
+  margin-bottom: 20px;
+  /* margin 중복 */
+  vertical-align: middle;
+}
+.menu__subMenu{
+  font-size: 1.6rem;
+  display: none;
+  width: 100%;
+}
+.menu__subMenu li{
+  margin: 10px 0;
+}
+.menu__subMenu a{
+  display: block;
+  padding: 5px 0;
+}
+.menuAct .menu__subMenu{
+  display: block;
+}
+
 /* 모바일 메인 콘텐츠 */
 .appMain {
   display: flex;
