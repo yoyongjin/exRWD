@@ -180,7 +180,8 @@ function demoWebCafeUI() {
       // 설정
       item.classList.add('icon-star');
       link.addEventListener('click', handlePreventBrowserAction);
-      link.setAttribute('role', 'presentation');
+      // 현업에서 잘 안쓰이는 설정
+      link.setAttribute('role', 'none');
       link.removeAttribute('aria-haspopup');
       link.removeAttribute('aria-pressed');
       link.removeAttribute('aria-expanded');
