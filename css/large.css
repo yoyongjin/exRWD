@@ -37,6 +37,10 @@ body {
 }
 .searchForm fieldset {
   display: contents;
+  /* 1fr은 auto 뺀 나머지. auto는 content에 따라. */
+  /* chrome에서는 display: contents;
+  : grid는 직계 자손을 item으로 갖는데 중간에 껴있는 fieldset을 없애는거(보편적이진 않음.부분지원) */
+  /* input이랑 button만 div로 묶어서 grid주면 상관없음. */
 }
 .buttonSearch {
   border: 1px solid #aaa;
