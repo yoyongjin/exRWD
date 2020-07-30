@@ -144,7 +144,6 @@ details {
 }
 summary {
   display: list-item;
-  
 }
 template {
   display: none;
@@ -215,31 +214,23 @@ legend,
 }
 /* 공통 헤더 */
 .appHeader {
-  /* background-color: silver; */
   display: grid;
 }
-/* 공통 검색 폼 */
-input[type="search"]{
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  padding: 2px 5px;
-  height: 35px;
-  width: calc(100% - 45px);
-  /* inline-block     white space 때문에 35에서 더빼줘야댐  */
-  margin-right: 5px;
-}
 /* 공통 멤버 링크 */
-.memberOnly{
+.memberOnly {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
 }
-.memberOnly .divider{
+.memberOnly .divider {
   margin: 0 5px;
 }
-/* 공통 내비게이션 */
-.appNavigation {
-  background-color: purple;
+/* 공통 검색 폼 */
+input[type="search"] {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 5px;
+  height: 35px;
 }
 /* 공통 메인 콘텐츠 */
 .appMain {
