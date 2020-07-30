@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/small.css" media="screen and (min-width: 320px) and (max-width: 999px)"/>
   <link rel="stylesheet" href="./css/large.css" media="screen and (min-width: 1000px)" />
-  <script src="./js/grid.js"></script>
+  <script src="./js/grid.js" defer></script>
   <script src="./js/app.js" defer></script>
 </head>
 <body>
@@ -33,7 +33,7 @@
         </fieldset>
       </form>
     </header>
-    <nav class="appNavigation menu ">
+    <nav class="appNavigation menu">
       <h2 class="a11yHidden">메인 메뉴</h2>
       <button class="buttonNone buttonBurger" aria-label="메뉴 열기">
         <span class="burgerBar round positionTop"></span>
@@ -41,7 +41,7 @@
         <span class="burgerBar round positionBottom"></span>
       </button>
       <ul class="menu__list resetList">
-        <li class="menu__item ">
+        <li class="menu__item">
           <a href="#" class="menu__link">HTML에 대해</a>
           <ul class="menu__subMenu">
             <li><a href="#">HTML5 소개</a></li>
@@ -84,11 +84,31 @@
       </ul>
     </nav>
     <main class="appMain">
-      <section class="book">추천 서적</section>
-      <section class="news">새소식</section>
-      <section class="board">게시판</section>
-      <section class="favorite">인기 사이트</section>
-      <article class="twitter">트위터</article>
+      <section class="book">
+        <h2 class="book__title sprite spriteBook">
+          추천서적<span class="book__enTitle themeGreen">Recommend Book</span>
+        </h2>
+      </section>
+      <section class="news">
+        <h2 class="news__title sprite spriteNews">
+          새소식 <span class="news__enTitle themeYellow">WebCafe News</span>
+        </h2>
+      </section>
+      <section class="board">
+        <h2 class="board__title sprite spriteBoard">
+          게시판<span class="board__enTitle themeBrown">WebCafe Board</span>
+        </h2>
+      </section>
+      <section class="favorite">
+        <h2 class="favorite__title sprite spriteFavorite">
+          인기 사이트<span class="favorite__enTitle themeOrange">Favorite Site</span>
+        </h2>
+      </section>
+      <article class="twitter">
+        <h2 class="twitter__title sprite spriteTwitter">
+          트위터<span class="twitter__enTitle themeSkyblue">WebCafe Twitter</span>
+        </h2>
+      </article>
     </main>
     <footer class="appFooter">푸터</footer>
   </div>
