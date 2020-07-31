@@ -102,6 +102,10 @@ body {
 .favorite {
   grid-area: 2/10/3/span 3;
 }
+.favorite__list a:hover::before,
+.favorite__list a:focus::before{
+  right: -10px;
+}
 /* 데스크탑 트위터 */
 .twitter {
   grid-area: 2/5/3/span 5;
