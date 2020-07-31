@@ -489,7 +489,58 @@ video.responsive{
   
   content: attr(data-tooltip);
 } */
+
+/* 공통 트위터 */
+.twitter{
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  grid-column-gap: 20px;
+}
+.twitter__title{
+  grid-area: 1/1/2/3;
+}
+.twitter__userInfo{
+  display: flex;
+  margin-left: 20px;
+}
+.twitter__userName, .twitter__userId{
+  margin-left: 0;
+}
+.twitter__userProfile{
+  grid-area: 2/2/4/3;
+  margin: 0;
+}
+.circlePhoto{
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+.twitter__summary{
+  margin-left: 20px;
+}
+.twitter__date{
+  margin: 1em 0;
+  text-align: end;
+}
+
+
 /* 공통 푸터 */
 .appFooter {
-  background-color: orange;
+  background-color: #6d695c;
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
+  padding: 60px 20px;
+  color: #fff;
+}
+.address span{
+   
+  font-style: normal;
+}
+.copyright{
+  display: block;
+  margin-top: 20px;
 }
